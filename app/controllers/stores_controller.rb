@@ -8,7 +8,7 @@ class StoresController < ApplicationController
 
   # GET /stores/1 or /stores/1.json
   def show
-    @products = @store.products
+    @products = @store.products.all
     @product = @store.products.new
   end
 
